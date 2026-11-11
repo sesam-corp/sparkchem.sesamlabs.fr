@@ -1,0 +1,22 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "QCW7F4FQCZ.fr.sesamlabs.sparkchem"
+        ],
+        "components": [
+          {
+            "/": "/lesson/*"
+          },
+          {
+            "/": "/pass"
+          },
+          {
+            "/": "/support"
+          }
+        ]
+      }
+    ]
+  }
+}

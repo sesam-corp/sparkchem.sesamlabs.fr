@@ -1,0 +1,14 @@
+{
+  "$comment": "Facts of this product the legal templates (docs/legal/templates) and the site chrome need and the brand pack does not carry; scripts/site/build.ts reads it. draft: true would keep the draft banner on the legal pages (nothing publishes while a placeholder remains). admob_publisher_id writes app-ads.txt (spec 47 §7). legal_updated_en is the date the English pages show.",
+  "locales": [
+    "en",
+    "fr"
+  ],
+  "premium_name": "Spark Premium",
+  "min_age": "13",
+  "ads_age": "16",
+  "admob_publisher_id": null,
+  "legal_updated": "9 novembre 2026",
+  "draft": false,
+  "legal_updated_en": "9 November 2026"
+}
