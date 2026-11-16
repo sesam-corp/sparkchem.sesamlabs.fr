@@ -1,0 +1,79 @@
+/* Spark Chemistry product site. Colours, font and radii come from tokens.css (generated from the brand pack). */
+@import url("tokens.css");
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--sparkchem-background);
+  color: var(--sparkchem-text);
+  font-family: var(--sparkchem-font);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+img { max-width: 100%; height: auto; }
+a { color: var(--sparkchem-primary); text-underline-offset: 0.18em; }
+a:hover { color: var(--sparkchem-primary-pressed); }
+:focus-visible { outline: 3px solid var(--sparkchem-focus); outline-offset: 2px; border-radius: 4px; }
+
+.wrap { width: min(100% - 2rem, 62rem); margin-inline: auto; }
+.skip-link { position: absolute; left: -999px; top: 0.5rem; padding: 0.5rem 1rem; background: var(--sparkchem-surface); border-radius: var(--sparkchem-radius-control); }
+.skip-link:focus { left: 1rem; }
+
+.site-header { padding-block: 1.25rem; }
+.brand { display: inline-flex; min-height: var(--sparkchem-touch-target); align-items: center; }
+.brand img { display: block; }
+
+.hero { padding-block: 2rem 3rem; }
+.hero-grid { display: grid; gap: 2rem; align-items: center; }
+@media (min-width: 46rem) { .hero-grid { grid-template-columns: 1.4fr 1fr; } }
+.hero-art { justify-self: center; }
+.eyebrow { margin: 0 0 0.5rem; color: var(--sparkchem-text-secondary); font-size: 0.8125rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+h1 { margin: 0 0 1rem; font-size: clamp(2rem, 1.2rem + 3.2vw, 3.25rem); line-height: 1.1; font-weight: 800; letter-spacing: -0.01em; }
+.lede { margin: 0 0 1.25rem; font-size: 1.1875rem; color: var(--sparkchem-text-secondary); max-width: 34rem; }
+.availability {
+  display: inline-block; margin: 0; padding: 0.625rem 1rem;
+  background: var(--sparkchem-surface); border: 1px solid var(--sparkchem-border); border-radius: 999px;
+  font-weight: 600;
+}
+
+.section { padding-block: 1.5rem; }
+h2 { margin: 0 0 1rem; font-size: 1.5rem; line-height: 1.25; font-weight: 800; }
+h3 { margin: 1.5rem 0 0.25rem; font-size: 1.0625rem; font-weight: 700; }
+.features { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.75rem; }
+@media (min-width: 46rem) { .features { grid-template-columns: 1fr 1fr; } }
+.features li, .card {
+  padding: 1rem 1.25rem; background: var(--sparkchem-surface);
+  border: 1px solid var(--sparkchem-border); border-radius: var(--sparkchem-radius-card);
+}
+.features strong { display: block; }
+.offer p { margin: 0 0 0.5rem; }
+.offer .price { margin: 0; font-size: 1.25rem; }
+
+.legal { padding-block: 1rem 3rem; max-width: 46rem; }
+.legal h1 { font-size: clamp(1.75rem, 1.3rem + 1.8vw, 2.5rem); }
+.legal h2 { margin-top: 2rem; font-size: 1.25rem; }
+.table-wrap { overflow-x: auto; margin-block: 1rem; border: 1px solid var(--sparkchem-border); border-radius: var(--sparkchem-radius-card); background: var(--sparkchem-surface); }
+table { border-collapse: collapse; width: 100%; font-size: 0.9375rem; }
+th, td { padding: 0.625rem 0.75rem; text-align: left; vertical-align: top; border-bottom: 1px solid var(--sparkchem-border); }
+th { background: var(--sparkchem-surface-subtle); }
+tbody tr:last-child td { border-bottom: 0; }
+.placeholder { background: var(--sparkchem-warning-surface); color: var(--sparkchem-warning); border-radius: 4px; padding-inline: 0.2em; }
+.draft { padding: 0.75rem 1rem; border-radius: var(--sparkchem-radius-control); font-weight: 600; }
+
+.button {
+  display: inline-flex; align-items: center; min-height: var(--sparkchem-touch-target); padding-inline: 1.25rem;
+  background: var(--sparkchem-primary); color: var(--sparkchem-on-primary); border-radius: var(--sparkchem-radius-control);
+  font-weight: 700; text-decoration: none;
+}
+.button:hover { background: var(--sparkchem-primary-pressed); color: var(--sparkchem-on-primary); }
+
+.site-footer { margin-top: 2rem; padding-block: 2rem; border-top: 1px solid var(--sparkchem-border); color: var(--sparkchem-text-secondary); font-size: 0.9375rem; }
+.site-footer ul { list-style: none; margin: 0 0 0.75rem; padding: 0; display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; }
+.site-footer a { display: inline-block; min-height: 2.75rem; line-height: 2.75rem; }
+.site-footer p { margin: 0; }
+[aria-current="page"] { font-weight: 700; }
+
+/* The placeholder pack has no wordmark (spec 35 §4): the header sets the name in type until the brand pipeline runs. */
+.brand { text-decoration: none; color: var(--sparkchem-text); }
+.brand-text { font-size: 1.375rem; font-weight: 800; letter-spacing: -0.01em; }

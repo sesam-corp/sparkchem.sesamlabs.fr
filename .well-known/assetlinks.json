@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "fr.sesamlabs.sparkchem",
+      "sha256_cert_fingerprints": [
+        "3F:58:07:9A:D7:00:D9:8D:43:31:60:93:E4:32:83:3D:11:A2:87:93:F3:9E:45:F7:C7:56:12:19:6D:EF:C8:8B"
+      ]
+    }
+  }
+]
